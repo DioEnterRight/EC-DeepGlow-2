@@ -1,0 +1,746 @@
+{
+ "width": 1920,
+ "height": 1080,
+ "cx": 960,
+ "cy": 540,
+ "common": "32 bpc project. Run once with Project Settings > Linearize Working Space ON (primary) and, for the runs marked `both`, once OFF with the same settings (name the output `<run>_nolin`). Comp 1920x1080, source layer = the frame, comp-sized, Deep Glow 2 applied. Defaults except what the run says. Source Opacity 0 (glow only), Unmult OFF, Dither OFF, Tone Mapping None/off, Tint off, Aspect Ratio 1 (no angle), Threshold 0, Glow Mode Exponential, Quality = the default preset unless stated.",
+ "runs": [
+  {
+   "id": "radius_10",
+   "frame": "imp_V100",
+   "priority": "P1",
+   "kind": "psf",
+   "note": "Radius sweep (impulse, V=100).",
+   "settings": {
+    "Radius": 10
+   }
+  },
+  {
+   "id": "radius_25",
+   "frame": "imp_V100",
+   "priority": "P1",
+   "kind": "psf",
+   "note": "Radius sweep (impulse, V=100).",
+   "settings": {
+    "Radius": 25
+   }
+  },
+  {
+   "id": "radius_50",
+   "frame": "imp_V100",
+   "priority": "P1",
+   "kind": "psf",
+   "note": "Radius sweep (impulse, V=100).",
+   "settings": {
+    "Radius": 50
+   }
+  },
+  {
+   "id": "radius_100",
+   "frame": "imp_V100",
+   "priority": "P1",
+   "kind": "psf",
+   "note": "Radius sweep (impulse, V=100).",
+   "settings": {
+    "Radius": 100
+   }
+  },
+  {
+   "id": "radius_200",
+   "frame": "imp_V100",
+   "priority": "P1",
+   "kind": "psf",
+   "note": "Radius sweep (impulse, V=100).",
+   "settings": {
+    "Radius": 200
+   }
+  },
+  {
+   "id": "radius_400",
+   "frame": "imp_V100",
+   "priority": "P1",
+   "kind": "psf",
+   "note": "Radius sweep (impulse, V=100).",
+   "settings": {
+    "Radius": 400
+   }
+  },
+  {
+   "id": "radius_800",
+   "frame": "imp_V100",
+   "priority": "P1",
+   "kind": "psf",
+   "note": "Radius sweep (impulse, V=100).",
+   "settings": {
+    "Radius": 800
+   }
+  },
+  {
+   "id": "exposure_0.25",
+   "frame": "imp_V100",
+   "priority": "P1",
+   "kind": "exposure",
+   "note": "Exposure sweep at Radius 100.",
+   "settings": {
+    "Radius": 100,
+    "Exposure": 0.25
+   }
+  },
+  {
+   "id": "exposure_0.5",
+   "frame": "imp_V100",
+   "priority": "P1",
+   "kind": "exposure",
+   "note": "Exposure sweep at Radius 100.",
+   "settings": {
+    "Radius": 100,
+    "Exposure": 0.5
+   }
+  },
+  {
+   "id": "exposure_1",
+   "frame": "imp_V100",
+   "priority": "P1",
+   "kind": "exposure",
+   "note": "Exposure sweep at Radius 100.",
+   "settings": {
+    "Radius": 100,
+    "Exposure": 1
+   }
+  },
+  {
+   "id": "exposure_2",
+   "frame": "imp_V100",
+   "priority": "P1",
+   "kind": "exposure",
+   "note": "Exposure sweep at Radius 100.",
+   "settings": {
+    "Radius": 100,
+    "Exposure": 2
+   }
+  },
+  {
+   "id": "exposure_4",
+   "frame": "imp_V100",
+   "priority": "P1",
+   "kind": "exposure",
+   "note": "Exposure sweep at Radius 100.",
+   "settings": {
+    "Radius": 100,
+    "Exposure": 4
+   }
+  },
+  {
+   "id": "exposure_8",
+   "frame": "imp_V100",
+   "priority": "P1",
+   "kind": "exposure",
+   "note": "Exposure sweep at Radius 100.",
+   "settings": {
+    "Radius": 100,
+    "Exposure": 8
+   }
+  },
+  {
+   "id": "amp_V1",
+   "frame": "imp_V1",
+   "priority": "P1",
+   "kind": "amplitude",
+   "note": "Linearity in input amplitude, Radius 100.",
+   "settings": {
+    "Radius": 100
+   }
+  },
+  {
+   "id": "amp_V10",
+   "frame": "imp_V10",
+   "priority": "P1",
+   "kind": "amplitude",
+   "note": "Linearity in input amplitude, Radius 100.",
+   "settings": {
+    "Radius": 100
+   }
+  },
+  {
+   "id": "amp_V100",
+   "frame": "imp_V100",
+   "priority": "P1",
+   "kind": "amplitude",
+   "note": "Linearity in input amplitude, Radius 100.",
+   "settings": {
+    "Radius": 100
+   }
+  },
+  {
+   "id": "phase_int",
+   "frame": "imp_V10",
+   "priority": "P2",
+   "kind": "psf",
+   "note": "Grid-phase test, integer position, Radius 50.",
+   "settings": {
+    "Radius": 50
+   }
+  },
+  {
+   "id": "phase_half",
+   "frame": "imp_V10_half2px",
+   "priority": "P2",
+   "kind": "psf",
+   "note": "Grid-phase test, +0.5 px, Radius 50.",
+   "settings": {
+    "Radius": 50
+   }
+  },
+  {
+   "id": "edge_100",
+   "frame": "edge_V2",
+   "priority": "P2",
+   "kind": "edge",
+   "note": "Half-plane: edge spread function.",
+   "settings": {
+    "Radius": 100
+   }
+  },
+  {
+   "id": "edge_400",
+   "frame": "edge_V2",
+   "priority": "P2",
+   "kind": "edge",
+   "note": "Half-plane: edge spread function.",
+   "settings": {
+    "Radius": 400
+   }
+  },
+  {
+   "id": "disc_100",
+   "frame": "disc_r100_V4",
+   "priority": "P2",
+   "kind": "psf",
+   "note": "Large disc, Radius 100.",
+   "settings": {
+    "Radius": 100
+   }
+  },
+  {
+   "id": "thr_0",
+   "frame": "patches",
+   "priority": "P1",
+   "kind": "threshold",
+   "note": "Threshold transfer: set Radius to its MINIMUM, Exposure 1 (or note it), View = final.",
+   "settings": {
+    "Threshold": 0,
+    "Radius": "minimum"
+   }
+  },
+  {
+   "id": "thr_10",
+   "frame": "patches",
+   "priority": "P1",
+   "kind": "threshold",
+   "note": "Threshold transfer: set Radius to its MINIMUM, Exposure 1 (or note it), View = final.",
+   "settings": {
+    "Threshold": 10,
+    "Radius": "minimum"
+   }
+  },
+  {
+   "id": "thr_25",
+   "frame": "patches",
+   "priority": "P1",
+   "kind": "threshold",
+   "note": "Threshold transfer: set Radius to its MINIMUM, Exposure 1 (or note it), View = final.",
+   "settings": {
+    "Threshold": 25,
+    "Radius": "minimum"
+   }
+  },
+  {
+   "id": "thr_50",
+   "frame": "patches",
+   "priority": "P1",
+   "kind": "threshold",
+   "note": "Threshold transfer: set Radius to its MINIMUM, Exposure 1 (or note it), View = final.",
+   "settings": {
+    "Threshold": 50,
+    "Radius": "minimum"
+   }
+  },
+  {
+   "id": "thr_75",
+   "frame": "patches",
+   "priority": "P1",
+   "kind": "threshold",
+   "note": "Threshold transfer: set Radius to its MINIMUM, Exposure 1 (or note it), View = final.",
+   "settings": {
+    "Threshold": 75,
+    "Radius": "minimum"
+   }
+  },
+  {
+   "id": "thr_100",
+   "frame": "patches",
+   "priority": "P1",
+   "kind": "threshold",
+   "note": "Threshold transfer: set Radius to its MINIMUM, Exposure 1 (or note it), View = final.",
+   "settings": {
+    "Threshold": 100,
+    "Radius": "minimum"
+   }
+  },
+  {
+   "id": "thrsmooth_0",
+   "frame": "patches",
+   "priority": "P2",
+   "kind": "threshold",
+   "note": "Threshold 50, Threshold Smooth sweep, Radius minimum.",
+   "settings": {
+    "Threshold": 50,
+    "ThresholdSmooth": 0,
+    "Radius": "minimum"
+   }
+  },
+  {
+   "id": "thrsmooth_50",
+   "frame": "patches",
+   "priority": "P2",
+   "kind": "threshold",
+   "note": "Threshold 50, Threshold Smooth sweep, Radius minimum.",
+   "settings": {
+    "Threshold": 50,
+    "ThresholdSmooth": 50,
+    "Radius": "minimum"
+   }
+  },
+  {
+   "id": "thrsmooth_100",
+   "frame": "patches",
+   "priority": "P2",
+   "kind": "threshold",
+   "note": "Threshold 50, Threshold Smooth sweep, Radius minimum.",
+   "settings": {
+    "Threshold": 50,
+    "ThresholdSmooth": 100,
+    "Radius": "minimum"
+   }
+  },
+  {
+   "id": "thrmode_lum",
+   "frame": "patches",
+   "priority": "P2",
+   "kind": "threshold",
+   "note": "Threshold 50, mode Luminance, Radius minimum.",
+   "settings": {
+    "Threshold": 50,
+    "ThresholdMode": "Luminance",
+    "Radius": "minimum"
+   }
+  },
+  {
+   "id": "thrmode_chroma",
+   "frame": "patches",
+   "priority": "P2",
+   "kind": "threshold",
+   "note": "Threshold 50, mode Chrominance, Radius minimum.",
+   "settings": {
+    "Threshold": 50,
+    "ThresholdMode": "Chrominance",
+    "Radius": "minimum"
+   }
+  },
+  {
+   "id": "thr_ramp_50",
+   "frame": "ramp_0_16",
+   "priority": "P2",
+   "kind": "threshold",
+   "note": "Ramp, Threshold 50, Radius minimum.",
+   "settings": {
+    "Threshold": 50,
+    "Radius": "minimum"
+   }
+  },
+  {
+   "id": "sat_bias_0",
+   "frame": "sat_discs",
+   "priority": "P2",
+   "kind": "generic",
+   "note": "Saturated discs, Radius 100, Saturation Bias sweep.",
+   "settings": {
+    "Radius": 100,
+    "SaturationBias": 0
+   }
+  },
+  {
+   "id": "sat_bias_100",
+   "frame": "sat_discs",
+   "priority": "P2",
+   "kind": "generic",
+   "note": "Saturated discs, Radius 100, Saturation Bias sweep.",
+   "settings": {
+    "Radius": 100,
+    "SaturationBias": 100
+   }
+  },
+  {
+   "id": "aspect_0.5",
+   "frame": "imp_V100",
+   "priority": "P2",
+   "kind": "generic",
+   "note": "Aspect Ratio sweep, Radius 100.",
+   "settings": {
+    "Radius": 100,
+    "AspectRatio": 0.5
+   }
+  },
+  {
+   "id": "aspect_2",
+   "frame": "imp_V100",
+   "priority": "P2",
+   "kind": "generic",
+   "note": "Aspect Ratio sweep, Radius 100.",
+   "settings": {
+    "Radius": 100,
+    "AspectRatio": 2
+   }
+  },
+  {
+   "id": "aspect_2_angle45",
+   "frame": "imp_V100",
+   "priority": "P2",
+   "kind": "generic",
+   "note": "Aspect 2, Enable Angle, 45 degrees.",
+   "settings": {
+    "Radius": 100,
+    "AspectRatio": 2,
+    "EnableAngle": true,
+    "Angle": 45
+   }
+  },
+  {
+   "id": "rgb_default",
+   "frame": "imp_V100",
+   "priority": "P2",
+   "kind": "generic",
+   "note": "True chromatic aberration (RGB radius multipliers) at their defaults, Radius 100.",
+   "settings": {
+    "Radius": 100,
+    "GlowAberration": true
+   }
+  },
+  {
+   "id": "rgb_custom",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "RGB multipliers R=50 G=100 B=200, Radius 100.",
+   "settings": {
+    "Radius": 100,
+    "GlowAberration": true,
+    "Multipliers": "50/100/200"
+   }
+  },
+  {
+   "id": "quality_draft",
+   "frame": "imp_V100",
+   "priority": "P2",
+   "kind": "generic",
+   "note": "Quality preset ladder signature (look for ripple), Radius 100.",
+   "settings": {
+    "Radius": 100,
+    "Quality": "Draft"
+   }
+  },
+  {
+   "id": "quality_low",
+   "frame": "imp_V100",
+   "priority": "P2",
+   "kind": "generic",
+   "note": "Quality preset ladder signature (look for ripple), Radius 100.",
+   "settings": {
+    "Radius": 100,
+    "Quality": "Low"
+   }
+  },
+  {
+   "id": "quality_medium",
+   "frame": "imp_V100",
+   "priority": "P2",
+   "kind": "generic",
+   "note": "Quality preset ladder signature (look for ripple), Radius 100.",
+   "settings": {
+    "Radius": 100,
+    "Quality": "Medium"
+   }
+  },
+  {
+   "id": "quality_high",
+   "frame": "imp_V100",
+   "priority": "P2",
+   "kind": "generic",
+   "note": "Quality preset ladder signature (look for ripple), Radius 100.",
+   "settings": {
+    "Radius": 100,
+    "Quality": "High"
+   }
+  },
+  {
+   "id": "quality_(each",
+   "frame": "imp_V100",
+   "priority": "P2",
+   "kind": "generic",
+   "note": "Quality preset ladder signature (look for ripple), Radius 100.",
+   "settings": {
+    "Radius": 100,
+    "Quality": "(each remaining preset in the list)"
+   }
+  },
+  {
+   "id": "custom_d0_s1_i8",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "Custom quality.",
+   "settings": {
+    "Radius": 100,
+    "Quality": "Custom",
+    "Downsampling": 0,
+    "StepsMultiplier": 1,
+    "Iterations": 8
+   }
+  },
+  {
+   "id": "custom_d0_s4_i8",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "Custom quality.",
+   "settings": {
+    "Radius": 100,
+    "Quality": "Custom",
+    "Downsampling": 0,
+    "StepsMultiplier": 4,
+    "Iterations": 8
+   }
+  },
+  {
+   "id": "custom_d2_s2_i8",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "Custom quality.",
+   "settings": {
+    "Radius": 100,
+    "Quality": "Custom",
+    "Downsampling": 2,
+    "StepsMultiplier": 2,
+    "Iterations": 8
+   }
+  },
+  {
+   "id": "custom_d0_s2_i3",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "Custom quality.",
+   "settings": {
+    "Radius": 100,
+    "Quality": "Custom",
+    "Downsampling": 0,
+    "StepsMultiplier": 2,
+    "Iterations": 3
+   }
+  },
+  {
+   "id": "tonemap_each",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "One render per Tone Mapping operator (write down the names the popup shows, in order), Radius 100.",
+   "settings": {
+    "Radius": 100
+   }
+  },
+  {
+   "id": "tint_each",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "Tint inner=orange outer=blue, one per blend mode (write the popup names), Radius 100.",
+   "settings": {
+    "Radius": 100
+   }
+  },
+  {
+   "id": "dirt_dirt_flat_0.5",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "Lens Dirt with the `dirt_flat_0.5` frame as the texture layer; then repeat with Matte Exposure +2 and Matte Gamma 2.",
+   "settings": {
+    "Radius": 100,
+    "LensDirtTexture": "dirt_flat_0.5"
+   }
+  },
+  {
+   "id": "dirt_dirt_checker",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "Lens Dirt with the `dirt_checker` frame as the texture layer; then repeat with Matte Exposure +2 and Matte Gamma 2.",
+   "settings": {
+    "Radius": 100,
+    "LensDirtTexture": "dirt_checker"
+   }
+  },
+  {
+   "id": "iris_disc_r100",
+   "frame": "imp_V100",
+   "priority": "P2",
+   "kind": "generic",
+   "note": "Glow Mode Iris, Iris layer = iris_disc, Radius 100.",
+   "settings": {
+    "GlowMode": "Iris",
+    "IrisLayer": "iris_disc",
+    "Radius": 100
+   }
+  },
+  {
+   "id": "iris_hex_r100",
+   "frame": "imp_V100",
+   "priority": "P2",
+   "kind": "generic",
+   "note": "Glow Mode Iris, Iris layer = iris_hex, Radius 100.",
+   "settings": {
+    "GlowMode": "Iris",
+    "IrisLayer": "iris_hex",
+    "Radius": 100
+   }
+  },
+  {
+   "id": "iris_ring_r100",
+   "frame": "imp_V100",
+   "priority": "P2",
+   "kind": "generic",
+   "note": "Glow Mode Iris, Iris layer = iris_ring, Radius 100.",
+   "settings": {
+    "GlowMode": "Iris",
+    "IrisLayer": "iris_ring",
+    "Radius": 100
+   }
+  },
+  {
+   "id": "iris_offdot_r100",
+   "frame": "imp_V100",
+   "priority": "P2",
+   "kind": "generic",
+   "note": "Glow Mode Iris, Iris layer = iris_offdot, Radius 100.",
+   "settings": {
+    "GlowMode": "Iris",
+    "IrisLayer": "iris_offdot",
+    "Radius": 100
+   }
+  },
+  {
+   "id": "iris_disc_it1",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "Iris disc, iterations sweep.",
+   "settings": {
+    "GlowMode": "Iris",
+    "IrisLayer": "iris_disc",
+    "Radius": 100,
+    "IrisIterations": 1
+   }
+  },
+  {
+   "id": "iris_disc_it4",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "Iris disc, iterations sweep.",
+   "settings": {
+    "GlowMode": "Iris",
+    "IrisLayer": "iris_disc",
+    "Radius": 100,
+    "IrisIterations": 4
+   }
+  },
+  {
+   "id": "iris_disc_it16",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "Iris disc, iterations sweep.",
+   "settings": {
+    "GlowMode": "Iris",
+    "IrisLayer": "iris_disc",
+    "Radius": 100,
+    "IrisIterations": 16
+   }
+  },
+  {
+   "id": "iris_disc_it64",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "Iris disc, iterations sweep.",
+   "settings": {
+    "GlowMode": "Iris",
+    "IrisLayer": "iris_disc",
+    "Radius": 100,
+    "IrisIterations": 64
+   }
+  },
+  {
+   "id": "iris_disc_ease0",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "Iris disc, radii easing sweep.",
+   "settings": {
+    "GlowMode": "Iris",
+    "IrisLayer": "iris_disc",
+    "Radius": 100,
+    "RadiiEasing": 0
+   }
+  },
+  {
+   "id": "iris_disc_ease50",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "Iris disc, radii easing sweep.",
+   "settings": {
+    "GlowMode": "Iris",
+    "IrisLayer": "iris_disc",
+    "Radius": 100,
+    "RadiiEasing": 50
+   }
+  },
+  {
+   "id": "iris_disc_ease100",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "Iris disc, radii easing sweep.",
+   "settings": {
+    "GlowMode": "Iris",
+    "IrisLayer": "iris_disc",
+    "Radius": 100,
+    "RadiiEasing": 100
+   }
+  },
+  {
+   "id": "iris_offdot_norm",
+   "frame": "imp_V100",
+   "priority": "P3",
+   "kind": "generic",
+   "note": "Iris offdot with Radius Normalization ON vs OFF (render both, suffix _on/_off).",
+   "settings": {
+    "GlowMode": "Iris",
+    "IrisLayer": "iris_offdot",
+    "Radius": 100
+   }
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+[package]
+name = "hostsim"
+version = "0.1.0"
+edition = "2021"
+[dependencies]
+wasmi = "=2.0.0"
+serde_json = "1"
+[profile.release]
+debug = false
